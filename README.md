@@ -68,7 +68,7 @@
        Uploading the PHP Reverse Shell and listening on localhost via nc -lvnp 1337 [ for me it's 1337 you use what you typed the port to in script ]
         ![7 2 Upload shellcode](https://user-images.githubusercontent.com/75413146/153705349-6173c59a-3551-42d8-8a3e-edcd6d32d468.png)
         
-       Shell Upload successfully !!!!
+       Shell Uploaded successfully !!!!
          ![7 3 Shell uploaded](https://user-images.githubusercontent.com/75413146/153705426-d93f1a53-2e47-4554-baa8-e7b0a1bba390.png)
          
        By clicking on the script you uploaded you can activate the shell. But don't forget to listen before you activated the shell.
