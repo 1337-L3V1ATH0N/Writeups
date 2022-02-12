@@ -120,6 +120,4 @@
             ![14 2 databases](https://user-images.githubusercontent.com/75413146/153706246-a4230f42-9b67-4820-895e-dd7e3d34aec5.png)
             ![14 3 database hash](https://user-images.githubusercontent.com/75413146/153706249-57ca5fea-01e4-4fc7-88a2-1ef0184433f2.png)
 
-
-
-
+# If any suggestions please advice.
